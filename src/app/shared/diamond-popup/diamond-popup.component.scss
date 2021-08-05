@@ -1,0 +1,23 @@
+@import '../../../styles.scss';
+
+.modal {
+  .modal-body {
+    .popup-alert {
+      background: $default;
+      padding: 20px;
+      border-radius: 8px;
+      h6 {
+        text-align: center;
+        color: $white;
+        font-size: 18px;
+        p {
+          color: $white;
+          font-size: 18px;
+        }
+      }
+    }
+    .input-fields {
+      padding: 28px 0 15px 0;
+    }
+  }
+}
