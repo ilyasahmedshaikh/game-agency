@@ -1,0 +1,57 @@
+@import '../../../styles.scss';
+
+.dashboard-screen {
+  padding: 24px 0;
+  .user-id {
+    float: right;
+    p {
+      font-size: 20px;
+      font-weight: 500;
+      color: $black;
+    }
+  }
+  .wallet-section {
+    padding: 35px 0;
+    .balance {
+      p {
+        color: $black;
+        font-size: 19px;
+        font-weight: 500;
+      }
+      .count-diamond {
+        p {
+          color: $black;
+          font-size: 19px;
+          font-weight: 500;
+        }
+        i {
+          color: $black;
+          font-size: 28px;
+          float: right;
+        }
+      }
+    }
+  }
+  .diamond-section {
+    padding-bottom: 10px;
+    .card {
+      padding: 24px 0;
+      .card-body {
+        text-align: center;
+        p {
+          color: $black;
+          font-size: 19px;
+          font-weight: 500;
+          i {
+            color: $black;
+            font-size: 40px;
+            padding-left: 15px;
+          }
+        }
+        .claim-btn {
+          padding-top: 20px;
+        }
+      }
+    }
+  }
+}

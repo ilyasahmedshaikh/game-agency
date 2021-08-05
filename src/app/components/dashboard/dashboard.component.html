@@ -1,1 +1,61 @@
-<p>dashboard works!</p>
+<div class="dashboard-screen">
+  <div class="container">
+    <div class="bar">
+      <div class="row">
+        <div class="col-12">
+          <div class="user-id">
+            <p>ID: 254175</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="wallet-section">
+      <div class="balance">
+        <div class="row">
+          <div class="col-12 col-md-4 col-lg-4">
+            <div class="card">
+              <div class="card-body">
+                <p>Wallet Balance: 0.00</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-5 col-lg-5">
+            <div class="card">
+              <div class="card-body">
+                <div class="count-diamond">
+                  <p>
+                    0 Diamonds
+                    <i class="fas fa-gem"></i>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-3 col-lg-3">
+            <div class="cashout-btn d-flex align-items-center">
+              <a class="rounded-btn">Cashout</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="diamond-section">
+      <div class="row">
+        <div class="col-12 col-md-4 col-lg-4 mt-4" *ngFor="let item of list">
+          <div class="card">
+            <div class="card-body">
+              <p>
+                {{item.count}} Diamonds
+                <i class="fas fa-gem"></i>
+              </p>
+              <div class="claim-btn">
+                <a class="rounded-btn">Claim</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
