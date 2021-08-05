@@ -17,7 +17,10 @@
       }
     }
     .input-fields {
-      padding: 28px 0 15px 0;
+      padding-top: 28px;
+      .diamond-btn {
+        padding-top: 20px;
+      }
     }
   }
 }
