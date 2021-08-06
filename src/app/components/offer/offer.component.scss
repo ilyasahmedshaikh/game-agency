@@ -1,0 +1,43 @@
+@import '../../../styles.scss';
+.offer-screen {
+  padding: 40px 0;
+  .card {
+    .popup-alert {
+      background: $default;
+      padding: 17px;
+      border-radius: 8px;
+      h6 {
+        text-align: center;
+        color: $white;
+        font-size: 18px;
+      }
+    }
+    .downloads {
+      padding-top: 25px;
+      text-align: center;
+      a {
+        &.andriod {
+          img {
+            width: 150px;
+            height: auto;
+            object-fit: cover;
+            object-position: center;
+          }
+        }
+        &.apple {
+          img {
+            width: 180px;
+            height: auto;
+            object-fit: cover;
+            object-position: center;
+            position: relative;
+            bottom: 5px;
+          }
+        }
+      }
+    }
+    .offer-btn {
+      padding-top: 20px;
+    }
+  }
+}
