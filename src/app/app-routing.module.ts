@@ -22,6 +22,10 @@ const routes: Routes = [
     path: 'offer',
     loadChildren: () => import('./components/offer/offer.module').then(m => m.OfferModule)
   },
+  {
+    path: 'redeem-codes',
+    loadChildren: () => import('./components/redeem-codes/redeem-codes.module').then(m => m.RedeemCodesModule)
+  }
 ];
 
 @NgModule({
