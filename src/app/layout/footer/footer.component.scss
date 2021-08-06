@@ -1,0 +1,32 @@
+@import '../../../styles.scss';
+
+.footer {
+  border: 1px solid #ccc;
+  padding: 35px 0;
+  .text {
+    text-align: center;
+    p {
+      font-weight: 500;
+      color: #ccc;
+      font-size: 15px;
+    }
+  }
+  .privacy-links {
+    text-align: center;
+    padding-top: 8px;
+    a {
+      cursor: pointer;
+      font-size: 16px;
+      font-weight: 500;
+      color: #ccc;
+      border-right: 1px solid #ccc;
+      padding: 0 10px;
+      &:nth-last-child(1) {
+        border-right: 0px;
+      }
+      &:hover {
+        color: $black;
+      }
+    }
+  }
+}
