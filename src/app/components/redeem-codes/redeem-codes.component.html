@@ -1,1 +1,67 @@
-<p>redeem-codes works!</p>
+<div class="redeem-codes-screen">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="heading">
+          <h1>Redeem Codes</h1>
+        </div>
+      </div>
+    </div>
+    <div class="generate-code">
+      <div class="row justify-content-center">
+        <div class="col-12 col-md-6 col-lg-6">
+          <form>
+            <div class="form-group">
+              <label>Referral Code (Optional)</label>
+              <input type="email" class="form-control" placeholder="Referral Code">
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <div class="row justify-content-center">
+        <div class="col-12 col-md-6 col-lg-6">
+          <p class="heading">Pick Redeem Code</p>
+          <div class="row pick-codes">
+            <div class="col-12 col-md-4 col-lg-4">
+              <div class="code">
+                <p>5236896</p>
+              </div>
+            </div>
+            <div class="col-12 col-md-4 col-lg-4">
+              <div class="code">
+                <p>5236896</p>
+              </div>
+            </div>
+            <div class="col-12 col-md-4 col-lg-4">
+              <div class="code">
+                <p>5236896</p>
+              </div>
+            </div>
+          </div>
+          <div class="generate-btn">
+            <a class="rounded-btn w-50" data-toggle="modal" data-target="#redeemPopupModalCenter">Generate</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="extra-section">
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-6 col-lg-6">
+            <form>
+              <div class="form-group">
+                <!-- <label>Loading</label> -->
+                <textarea class="form-control" rows="3" placeholder="Loading..."></textarea>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<app-redeem-code-popup></app-redeem-code-popup>
+<app-locker-popup></app-locker-popup>

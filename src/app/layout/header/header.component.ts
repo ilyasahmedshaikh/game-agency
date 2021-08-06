@@ -28,6 +28,7 @@ export class HeaderComponent implements OnInit {
     { name: "Store", url: "/store", icon: "" },
     { name: "Offer", url: "/offer", icon: "" },
     { name: "Dashboard", url: "/dashboard", icon: "" },
+    { name: "Redeem Codes", url: "/redeem-codes", icon: "" },
     { name: "Login", url: "/auth/login", icon: "" },
   ]
 
