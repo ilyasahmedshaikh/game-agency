@@ -1,4 +1,24 @@
-<div class="header" *ngIf="headerShow">
+<div class="header d-md-" *ngIf="headerShow">
+  <div class="container">
+      <div class="row">
+        <div class="col-3">
+          <p>Logo</p>
+        </div>
+        <div class="col-9">
+          <ul class="parent-nav">
+            <li *ngFor="let item of pages">
+              <a (click)="toggleMenu()" [routerLink]="item.url">
+                {{item.name}}
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+  </div>
+</div>
+
+<!-- mobile header  -->
+<div class="header d-none d-sm-block" *ngIf="headerShow">
     <div class="container">
         <div class="toggleContainer" (click)="toggleMenu()" [ngClass]="{'change': toggleButton}" *ngIf="!backBtnState">
             <div class="bar1"></div>
